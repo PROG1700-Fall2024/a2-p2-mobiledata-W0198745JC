@@ -15,9 +15,9 @@ def main():
 #Elif statement for mb useage
     if mb <= 200:                        # thought all variables needed "" but just string does
         cost= 20.00
-    elif mb == 200 and mb <=500:         #orginally had or but quickly switched to and
-        cost= .105*mb
-    elif mb >=500 and mb <=1000:
+    elif mb > 200 and mb <=500:         #orginally had or but quickly switched to and
+        cost= .105*mb                   #had the elif 200 as = which was causing a conflict so changed it to just be > 
+    elif mb >500 and mb <=1000:
         cost= .110*mb
     else:
         cost=118.00
@@ -26,6 +26,7 @@ def main():
     
 #print cost 
     print("Total Charge is ${0:.2f}".format(cost))
+
 
 
 
